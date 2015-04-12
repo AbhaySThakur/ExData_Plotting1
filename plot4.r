@@ -28,7 +28,7 @@ summary(data_step2)
 
 #Step 4: Fork github repo https://github.com/rdpeng/ExData_Plotting1
 dev.cur()
-png(file="./plot4.png",bg="transparent",width=480,height=480,units="px")
+png(file="./plot4.png",bg="white",width=480,height=480,units="px")
 #PLOT 4
 par(mfrow=c(2,2),mar=c(5,4,1,1))
 #subplot 1

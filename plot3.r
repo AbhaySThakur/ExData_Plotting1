@@ -28,7 +28,7 @@ summary(data_step2)
 
 #Step 4: Fork github repo https://github.com/rdpeng/ExData_Plotting1
 dev.cur()
-png(file="./plot3.png",bg="transparent",width=480,height=480,units="px")
+png(file="./plot3.png",bg="white",width=480,height=480,units="px")
 #PLOT 3
 plot(data_step2$datetime,data_step2$Sub_metering_1,ylab="Energy sub metering"
         ,type="n",xlab="")

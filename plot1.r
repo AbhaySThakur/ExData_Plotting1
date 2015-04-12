@@ -28,7 +28,7 @@ summary(data_step2)
 
 #Step 4: Fork github repo https://github.com/rdpeng/ExData_Plotting1
 dev.cur()
-png(file="./plot1.png",bg="transparent",width=480,height=480,units="px")
+png(file="./plot1.png",bg="white",width=480,height=480,units="px")
 #PLOT 1
 hist(data_step2$Global_active_power, col="red", xlab="Global Active Power(kilowatts)"
      ,main="Global Active Power")
