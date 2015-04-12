@@ -14,7 +14,7 @@ if(!file.exists(filepath)){
 library(sqldf)
 mysql <- 'select * from file where Date = "1/2/2007" or Date ="2/2/2007"'
 data_step1 <- read.csv.sql(file = filepath, sql = mysql,sep = ";",header = TRUE)
-View(data_step1)
+#View(data_step1)
 
 #Step 2 : Convert date and time variable
 datetime <- as.POSIXlt(paste(data_step1$Date,data_step1$Time,sep=" "), format="%d/%m/%Y %H:%M:%S")
@@ -22,7 +22,7 @@ data_step2 <- cbind(data_step1,datetime)
 
 #Step 3 : Check for missing values in variable "?"
 str(data_step2)
-View(data_step2)
+#View(data_step2)
 summary(data_step2) 
 #Oberservation: no missing values were found
 
